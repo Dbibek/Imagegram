@@ -1,10 +1,11 @@
 import firebase from "firebase/app";
 import "firebase/storage";
 import "firebase/firestore";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyCjIyeLZjK9zF0z-m-CSlQpWm1eBWvGd3c",
+  apiKey: API_KEY,
   authDomain: "imagegram-92765.firebaseapp.com",
   projectId: "imagegram-92765",
   storageBucket: "imagegram-92765.appspot.com",
