@@ -93,6 +93,9 @@ label:hover {
   position: relative;
 }
 .img-wrap img {
+  /* min-width: 100%;
+  min-height: 100%;
+  max-width: 150%; */
   height: 100%;
   width: 100%;
 
