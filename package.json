@@ -2,7 +2,7 @@
   "name": "imagegram",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dbibek.github.io/imagegram/",
+  "homepage": "https://dbibek.github.io/Imagegram/",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
