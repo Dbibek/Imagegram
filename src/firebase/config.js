@@ -1,22 +1,25 @@
 import firebase from "firebase/app";
 import "firebase/storage";
 import "firebase/firestore";
-const API_KEY = process.env.REACT_APP_API_KEY;
+import "firebase/auth";
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: API_KEY,
-  authDomain: "imagegram-92765.firebaseapp.com",
-  projectId: "imagegram-92765",
-  storageBucket: "imagegram-92765.appspot.com",
-  messagingSenderId: "670602284638",
-  appId: "1:670602284638:web:6537cd59a8aefb2d566ecf",
-};
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp({
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSASING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+});
+
+export const auth = app.auth();
 
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
 const timeStamp = firebase.firestore.FieldValue.serverTimestamp;
 
 export { projectStorage, projectFirestore, timeStamp };
+export default app;
