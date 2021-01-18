@@ -5,7 +5,7 @@ import SignUp from "./components/SignUp";
 import Title from "./components/Title";
 import UploadForm from "./components/UploadForm";
 import { Container } from "react-bootstrap";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [selected, setSelected] = useState(null);
@@ -17,7 +17,7 @@ function App() {
         <ImageGrid setSelected={setSelected} />
         {selected && <Model selected={selected} setSelected={setSelected} />}
       </div>
-        <SignUp />
+      <SignUp />
     </Container>
   );
 }

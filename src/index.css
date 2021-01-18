@@ -5,22 +5,22 @@
   padding: 0;
 }
 :root {
-  --primary: #efb6b2;
-  --secondary: #4e4e4e;
-  --error: #ff4a4a;
+  --primary1: #efb6b2;
+  --secondary2: #4e4e4e;
+  --error3: #ff4a4a;
 }
 
 /* base styles & title */
 body {
   font-family: "Noto Serif";
-  color: var(--secondary);
+  color: var(--secondary2);
 }
 .App {
   max-width: 960px;
   margin: 2rem auto;
 }
 .title h1 {
-  color: var(--primary);
+  color: var(--primary1);
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
@@ -35,29 +35,29 @@ body {
 }
 
 /* upload form styles */
-form {
+.form {
   margin: 30px auto 10px;
   text-align: center;
 }
-label input {
+.label input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-label {
+.label {
   display: block;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary1);
   border-radius: 50%;
   margin: 10px auto;
-  line-height: 35px;
-  color: var(--primary);
+  line-height: 25px;
+  color: var(--primary1);
   font-weight: bold;
   font-size: 24px;
 }
-label:hover {
-  background: var(--primary);
+.label:hover {
+  background: var(--primary1);
   color: white;
 }
 .output {
@@ -65,15 +65,15 @@ label:hover {
   font-size: 0.8rem;
 }
 .error {
-  color: var(--error);
+  color: var(--error3);
 }
 .error {
-  color: var(--error);
+  color: var(--error3);
 }
 /* progress bar styles */
 .progress-bar {
   height: 5px;
-  background: var(--primary);
+  background: var(--primary1);
   margin-top: 20px;
 }
 
@@ -147,11 +147,11 @@ label:hover {
   border: 3px solid white;
 }
 
-@media screen and (max-width:624px) , (max-width:935px){
-  .App{
+@media screen and (max-width: 624px), (max-width: 935px) {
+  .App {
     align-items: center;
   }
-  .img-grid{
+  .img-grid {
     justify-content: center;
   }
 }
