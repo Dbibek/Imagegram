@@ -23,3 +23,4 @@ const projectFirestore = firebase.firestore();
 const timeStamp = firebase.firestore.FieldValue.serverTimestamp;
 
 export { auth, projectStorage, projectFirestore, timeStamp };
+// export { auth,timeStamp };
