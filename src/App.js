@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "./contexts/AuthContext";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HomePage from "./pages/HomePage";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
+import HomePage from "./pages//HomePage";
+import Signup from "./components/Auth/Signup";
+import Login from "./components/Auth/Login";
 
-import PrivateRoute from "./components/PrivateRoute";
-import ForgotPassword from "./components/ForgotPassword.js";
-import UpdateProfile from "./components/UpdateProfile";
+import PrivateRoute from "./components/Auth/PrivateRoute";
+import ForgotPassword from "./components/Auth/ForgotPassword.js";
+import UpdateProfile from "./components/Auth/UpdateProfile";
 
 function App() {
   return (
